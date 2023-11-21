@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FplshopApplication<fplshop>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "shop.fplshop.FplshopApplication",
+            "projectName": "fplshop",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
