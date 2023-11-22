@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+}
+.logo{
+    width: 40%;
+}
+/* .search-bar{
+    width: 100%;
+} */
+.search-bar>input{
+    width: 80%;
+    height: 100%;
+}
+
+.account-btn{
+    display: inline-flex;
+    max-height: 50%;
+    color: black;
+    border-radius: 3px;
+}
+
+.account-btn>p{
+    font-size: larger;
+    font-weight: 700;
+    max-width: 100%;
+}
+
+.account-btn:hover{
+    color: gray;
+}
+
+/* =================== category =================== */
+.category{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.category a{
+    color: rgb(101, 101, 101) ;
+    background-color: white;
+    
+    /*  */
+}
+
+
+.category .col-2{
+    /* border: 0.3px solid black; */
+    border-radius: 10px;
+    
+}
+
+.category .col-2:hover{   
+    text-decoration: none;
+    color: black;
+    box-shadow: inset 1px 1px 1px 1px gray; /* inset và màu xám */
+    
+}
+
+
+/* ================== footer =============== */
+.footer{
+    background-color: black;
+    border-top: 1px double burlywood;
+    color: white;
+}
+
+
+/* ============== Slide ================ */
+.slide img{
+    border: 1px solid red;
+    border-radius: 10px;
+    
+}
+
+
+/*------- css ProductDetail cua tuong---------*/
+
+    /*------Product Detail-------*/
+
+.top {
+    padding-bottom: 15px;
+}
+.top .st-name {
+    font-weight: 500;
+    font-size: 20px;
+}
+.top .st-name .st-id {
+    font-size: 13px;
+    color: rgb(137, 137, 137);
+}
+/*Thông số*/
+.st-param {
+    background-color: #a8a8ab;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+}
+.st-param ul {
+    padding: 0;
+}
+.st-param li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.st-param i {
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.st-param span {
+    flex-grow: 1;
+    font-size: 13px;
+}
+/*--Thong tin-*/
+.policy {
+    display: flex;
+    margin-top: 15px;
+}
+.warranty,.delivery {
+    display: flex;
+    align-items: center;
+}
+.warranty p,.delivery p {
+    margin: 0;
+}
+/*----chi tiết----*/
+.tuong-ne {
+    border: 1px solid rgb(54, 86, 179);
+    border-radius: 6px;
+    padding-right: -5px;
+}
+.inner {
+    text-align: center;
+}
+.price-sub {
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.price span {
+    vertical-align: middle;
+    background-color: rgb(188, 198, 206);
+    color: rgb(255, 47, 0);
+    font-size: 14px;
+    line-height: 1;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.inner h4,.inner h3,.price-sub,.price span {
+    margin: 0;
+}
+.inner h3 {
+    color: rgb(255, 47, 0);
+    font-size: 27px;
+}
+
+.price-sub,.price span {
+    display: inline-block;
+}
+
+/*--radio button--*/
+.radio {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+/*--ưu dãi--*/
+.promotion {
+    margin-bottom: 20px;
+    background-color: aqua;
+    border: 1px solid #5348a8;
+}
+.promotion .promotion-head {
+    background-color: aqua;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.promotion .promotion-body {
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*--khuyens mãi--*/
+.st-box {
+    background-color: #f7f7f7;
+    padding: 13px;
+    border-radius: 8px;
+}
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+/*--đoi mơi--*/
+.switch {
+    margin-top: 10px;
+}
+.input-group {
+    padding: 8px;
+}
+p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 15px;
+}
+/*--mua ngay--*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+.button {
+    flex: 1;
+    max-width: 700px;
+    padding: 5px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+.buy-now {
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 35px 0 35px 0;
+}
+.installment,.addToCart {
+    background-color: #ffc107;
+    color: #000000;
+    border-radius: 35px 0 35px 0;
+}
+.button:hover {
+    background: linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+}
+.contact-container {
+    margin-top: 15px;
+}
+.phone-number {
+    color: red;
+}
+
+
+/*--------------Product List------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.category{
+    border-radius: 10px;
+}
+.category .col-2{
+    border: 0.3px solid red;
+}
+
+.category .col-2:hover{
+    background-color: rgb(236, 121, 121);
+    text-decoration: none;
+    color: white;
+}
+.hot .card{
+    margin: 0 1%;
+    width: 16%;
+    border-radius: 5px;
+    padding: 10px;
+}
+

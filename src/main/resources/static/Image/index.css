@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+.logo{
+    width: 60%;
+}
+.search-bar{
+    width: 100%;
+}
+.search-bar>input{
+    width: 80%;
+    height: 100%;
+}
+
+.account-btn{
+    background-color: red;
+    display: inline-flex;
+    max-height: 50%;
+    color: white;
+    border-radius: 3px;
+}
+
+.account-btn>p{
+    font-size: larger;
+    font-weight: 700;
+    max-width: 100%;
+}
+
+/* -----------------menu-------------- */
+.menu{
+    
+}
+
+.category{
+    border-radius: 10px;
+}
+
+
+.category .col-2{
+    border: 0.3px solid red;
+    
+}
+
+.category .col-2:hover{
+    background-color: rgb(236, 121, 121);
+    text-decoration: none;
+    color: white;
+}
+
+/* ======================= hot product ============== */
+.hot{
+    background-image: url('/images/26180.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.hot h1{
+    margin: 2% 0;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.hot .card{
+    margin: 0 1%;
+    width: 16%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new{
+    /* background-image: url('/images/3661906.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border: 1px solid red;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.new h1{
+    margin: 2% 0;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.new .card{
+    margin: 0 1%;
+    width: 16%;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* ================== footer =============== */
+.footer{
+    background-color: black;
+    border-top: 1px double burlywood;
+    color: white;
+}
