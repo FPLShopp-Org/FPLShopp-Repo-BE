@@ -1,0 +1,43 @@
+/* -----------------slide-------------- */
+.bg-ss{
+    background-image: url('/assets/images2/638358125221674431_desk-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.slide img{
+    width: 90%;
+}
+/* =================== category =================== */
+.category{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.category a{
+    color: rgb(101, 101, 101) ;
+    background-color: white;
+    
+    /*  */
+}
+
+
+.category .col-2{
+    /* border: 0.3px solid black; */
+    border-radius: 10px;
+    
+}
+
+.category .col-2:hover{   
+    text-decoration: none;
+    color: black;
+    box-shadow: inset 1px 1px 1px 1px gray; /* inset và màu xám */
+    
+}
+/* ============== Slide ================ */
+.slide img{
+    border: 1px solid red;
+    border-radius: 10px;
+    
+}

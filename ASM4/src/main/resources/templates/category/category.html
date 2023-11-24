@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index :: dynamic(~{::main})}">
+
+<body>
+	<main>
+            <div class="category container mt-3">
+                <div class="row text-center">
+                    <a class="col-2" href="#">
+                        <i class="fa fa-mobile fa-2x mt-3" aria-hidden="true"></i>
+                        <p>Điện thoại </p>
+                    </a>
+                    <a class="col-2" href="#">
+                        <i class="fa fa-laptop fa-2x mt-3" aria-hidden="true"></i>
+                        <p>Laptop</p>
+                    </a>
+                    <a class="col-2" href="#">
+                        <i class="fa fa-desktop fa-2x  mt-3" aria-hidden="true"></i>
+                        <p>PC</p>
+                    </a>
+                    <a class="col-2" href="#">
+                       <i class="fas fa-tablet-alt fa-2x  mt-3"></i>
+                        <p>Máy tính bảng</p>
+                    </a>
+                    <a class="col-2" href="#">
+                       <i class="fas fa-tv fa-2x  mt-3"></i>
+                        <p>Đồ gia dụng</p>
+                    </a>
+                    <a class="col-2" href="#">
+                        <i class="fas fa-keyboard fa-2x  mt-3"></i>
+                        <p>Phụ kiện</p>
+                    </a>
+                </div>
+            </div>
+		
+		
+		  <div class="container">
+			<section class="product-area">
+				<div class="container product-pb" data-padding-bottom="25">
+				<div class="blockheader">
+									<div class="text-center mx-auto  g-mb-50">
+										<h1 class="g-color-coco mb-1 mt-5 text-cation title">
+											<a href="">Sản phẩm hot</a>
+										</h1>
+									</div>
+								</div>
+					<div class="row" >
+						<div class="col-12">  
+							<div class="row">								
+							</div>
+							<div class="row">
+								<div class="col-md-3" th:each="p:${items}">
+									<div class="product-item">
+										<div class="inner-content">
+											<div class="product-thumb">
+												<a th:href="@{|/product/detail/${p.id}|}">
+													<img class="product-item m-auto d-block" th:src="@{${'/images1/'+ p.image}}"
+														th:title="${p.name}">
+												</a>
+												<div class="product-action">
+													<div class="addto-wrap">
+														<a class="add-wishlist" href="javascript:(0);">
+															<i class="zmdi zmdi-favorite-outline zmdi-hc-fw icon"></i>
+														</a>
+														<a class="add-cart" th:href="@{|/product/detail/${p.id}|}"
+															th:attr="ng-click=@{|cart.add(${p.id})|}">
+															<i class="zmdi zmdi-shopping-cart-plus icon"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="product-desc">
+												<div class="product-info">
+													<h4 class="title">
+														<a th:href="@{|/product/detail/${p.id}|}">[(${p.name})]</a>
+													</h4>
+													<div class="prices">
+														<span class="price">[[${#numbers.formatDecimal(p.price,0,'COMMA',0,'POINT')}]]đ</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<nav aria-label="Page navigation example">
+					<ul class="pagination justify-content-center">
+						<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number-1}|}" tabindex="-1">Previous</a></li>
+						<li class="page-item"><a class="page-link" href="/index?p=1">1</a></li>
+						<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+1}|}">2</a></li>
+						<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+2}|}">3</a></li>
+							<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+3}|}">4</a></li>
+							<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+4}|}">5</a></li>
+							<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+5}|}">...</a></li>
+						<li class="page-item"><a class="page-link"
+							th:href="@{|/index?p=${items.number+5}|}">Next</a></li>
+					</ul>
+				</nav>
+		</div>
+			</div>  
+			<section class="brand-logo-area">
+				<div class="container">
+					<div class="brand-logo-content">
+						<div class="row">
+							<div class="col-12">
+								<div class="swiper-container swiper-slide-gap brand-logo-slider-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/1.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/7.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/3.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/5.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/6.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="brand-logo-item">
+												<a href="javascript:(0);">
+													<img src="assets/images2/9.jpg" width="150">
+												</a>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
